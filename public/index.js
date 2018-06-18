@@ -22,9 +22,9 @@ const drawMap = function () {
 }
 
 const makeButton = function(map) {
-  const button = document.getElementById("stall-button");
+  const button = document.getElementById("recentre-button");
   button.addEventListener("click", function() {
-    map.moveMap([1.290270, 103.851959]);
+    map.moveMap([1.290270, 103.851959], 15);
   });
 }
 
@@ -76,8 +76,8 @@ const populateStallData = function(stalls){
   const p = document.createElement("h1");
   const p2 = document.createElement("h2");
   const a1 = document.createElement('img');
-  const p3 = document.createElement("p");
-  const p4 = document.createElement("p");
+  // const p3 = document.createElement("p");
+  // const p4 = document.createElement("p");
   const p5 = document.createElement("p");
   const p6 = document.createElement("p");
 
@@ -92,8 +92,8 @@ const populateStallData = function(stalls){
 
   p.textContent = result.name;
   p2.textContent = result.address;
-  p3.textContent = result.lat;
-  p4.textContent = result.lng;
+  // p3.textContent = result.lat;
+  // p4.textContent = result.lng;
   p5.textContent = `Cooked food stalls: ${result.cookedfoodstalls}`;
   p6.textContent = `Market produce stalls: ${result.mktproducestalls}`;
 

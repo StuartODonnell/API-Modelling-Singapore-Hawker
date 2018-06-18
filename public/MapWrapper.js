@@ -14,7 +14,7 @@ MapWrapper.prototype.addMarker = function (coords) {
 };
 
 MapWrapper.prototype.moveMap = function (coords) {
-  this.map.flyTo(coords);
+  this.map.flyTo(coords, 15);
 };
 
 // MapWrapper.prototype.addInfoWindow = function () {
