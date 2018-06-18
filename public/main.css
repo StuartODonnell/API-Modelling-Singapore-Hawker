@@ -1,0 +1,66 @@
+h1{
+  font-family: courier;
+  font-size: 100px;
+  text-align: center;
+  color: ivory;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+h2{
+  font-family: courier;
+  text-align: center;
+  background-color: ivory;
+}
+
+h3{
+  font-family: courier;
+}
+p {
+
+  font-family: courier;
+  color: black;
+  width: 49%;
+  float: right;
+  background-color: ivory;
+  text-align: center;
+  padding: 1% 0;
+}
+
+div{
+  text-align: center;
+  border-color: black;
+}
+
+body{
+  background-color: lightslategrey;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("./SingHawkerStall.jpg");
+  background-size: cover;
+
+}
+
+select{
+  text-align: center;:
+  align-content: center;
+  width: 75%;
+}
+
+img{
+  height: 50vh;
+  width: 10vw;
+
+  align-items: left;
+
+}
+
+#stall-data{
+  text-align: center;
+}
+
+#main-map {
+  height: 500px;
+  
+}
