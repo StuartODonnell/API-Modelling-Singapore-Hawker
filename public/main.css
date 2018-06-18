@@ -47,13 +47,15 @@ body{
 select{
   /* text-align: center;: */
   align-content: center;
-  width: 500px;
+  width: 1000px;
   font-size: 18px;
   font-weight: bold;
   color: yellow;
   text-align-last:center;
   background: lightslategrey;
-  border-color: ivory;
+  border-color: yellow;
+  border-style: solid;
+  border-width: 2px;
 
 }
 
