@@ -14,12 +14,12 @@ MapWrapper.prototype.addMarker = function (coords) {
 };
 
 MapWrapper.prototype.moveMap = function (coords) {
-  this.map.flyTo(coords, 15);
+  this.map.flyTo(coords, 12);
 };
 
-// MapWrapper.prototype.addInfoWindow = function () {
-//   const myMarker = new L.marker([1.290270, 103.851959], {
-//     title: "Heart Of Singapore"
-//   }).bindPopup(`<a href="http://codeclan.com">Singapore</a>`).openPopup();
-//   myMarker.addTo(this.map);
-// };
+MapWrapper.prototype.addInfoWindow = function () {
+  const myMarker = new L.marker(coords, {
+    title: "Heart Of Singapore"
+  }).bindPopup(`<a href="https://en.wikipedia.org/wiki/Singapore">Singapore</a>`).openPopup();
+  myMarker.addTo(this.map);
+};

@@ -10,7 +10,7 @@ const app = function(){
 const drawMap = function () {
   const mapDiv = document.getElementById("main-map");
   const singapore = [1.290270, 103.851959];
-  const zoomLevel = 15;
+  const zoomLevel = 12;
   const mainMap = new MapWrapper(mapDiv, singapore, zoomLevel);
 
   makeButton(mainMap);
@@ -92,27 +92,16 @@ const populateStallData = function(stalls){
 
   p.textContent = result.name;
   p2.textContent = result.address;
-  // p3.textContent = result.lat;
-  // p4.textContent = result.lng;
   p5.textContent = `Cooked food stalls: ${result.cookedfoodstalls}`;
   p6.textContent = `Market produce stalls: ${result.mktproducestalls}`;
-
-// insert map integration element
-  // a1.src = result.map_url;
-  // a1.width = 500;
-
-
 
 
   div.appendChild(p);
   div.appendChild(p2);
-  // div.appendChild(a1);
   div.appendChild(p3);
   div.appendChild(p4);
   div.appendChild(p5);
   div.appendChild(p6);
-
-
 
 }
 
