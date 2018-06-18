@@ -10,7 +10,7 @@ const app = function(){
 const drawMap = function () {
   const mapDiv = document.getElementById("main-map");
   const singapore = [1.290270, 103.851959];
-  const zoomLevel = 12;
+  const zoomLevel = 15;
   const mainMap = new MapWrapper(mapDiv, singapore, zoomLevel);
 
   makeButton(mainMap);
@@ -39,7 +39,7 @@ const requestComplete = function (){
   if(this.status !== 200) return;
   const stalls = JSON.parse(this.response);
   populateDropDown(stalls);
-  populateList(stalls);
+  // populateList(stalls);
 }
 
 const populateList = function(stalls){

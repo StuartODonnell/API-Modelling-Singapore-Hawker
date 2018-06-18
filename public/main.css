@@ -19,12 +19,14 @@ h3{
 p {
 
   font-family: courier;
+  font-size: 20px;
   color: black;
-  width: 49%;
-  float: right;
+  /* width: 49%; */
+  float: center;
   background-color: ivory;
   text-align: center;
   padding: 1% 0;
+  font-weight: bold;
 }
 
 div{
@@ -43,9 +45,11 @@ body{
 }
 
 select{
-  text-align: center;:
+  /* text-align: center;: */
   align-content: center;
-  width: 75%;
+  width: 500px;
+  font-size: 15px;
+  text-align-last:center;
 }
 
 img{
@@ -62,5 +66,5 @@ img{
 
 #main-map {
   height: 500px;
-  
+
 }
