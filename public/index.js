@@ -24,7 +24,7 @@ const drawMap = function () {
 const makeButton = function(map) {
   const button = document.getElementById("stall-button");
   button.addEventListener("click", function() {
-    map.moveMap([0, 0]);
+    map.moveMap([1.290270, 103.851959]);
   });
 }
 
@@ -38,9 +38,8 @@ const makeRequest = function (url, callback){
 const requestComplete = function (){
   if(this.status !== 200) return;
   const stalls = JSON.parse(this.response);
-  // populateList(countries);
   populateDropDown(stalls);
-  // populateList(stalls);
+  populateList(stalls);
 }
 
 const populateList = function(stalls){
